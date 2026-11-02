@@ -1,0 +1,79 @@
+墨刃 · 雨夜无归 / Credits
+
+Original game story, interface, sword effects, integration, and generated character assets were developed for this project.
+The work uses the following third-party sources. Their licenses remain separate.
+
+Three.js 0.180.0 — MIT
+https://threejs.org/
+License included in vendor/THREE-LICENSE.txt.
+
+Long Wind / 长风 — source code MIT, Copyright (c) 2026 jbang2004
+https://github.com/jbang2004/long-wind
+Reference commit: 42e49155663e1be1e282b25053e7a052363856ee
+The bamboo geometry, leaf atlas and wind shader were adapted from its procedural bamboo implementation.
+Original MIT notice is retained under assets/world/.
+Camera, action timing and animation retargeting were studied as implementation references.
+No Tripo character models or Adobe Mixamo animation files from Long Wind are included.
+
+Quaternius Universal Animation Library / Standard (UAL1) — CC0 1.0
+https://quaternius.com/packs/universalanimationlibrary.html
+https://quaternius.itch.io/universal-animation-library
+https://opengameart.org/content/universal-animation-library
+Walk_Loop, Jog_Fwd_Loop, Sprint_Loop, Roll, Sword_Idle, Death01, Jump_Start, Jump_Loop, Jump_Land, Crouch_Idle_Loop, Crouch_Fwd_Loop and Sword_Attack were retargeted in Blender.
+The downloaded Standard source package is the author's OpenGameArt release; it is not represented as the latest paid/Pro library.
+Original license included in licenses/Quaternius-UAL1-CC0.txt.
+
+Quaternius Universal Animation Library 2 / Standard — CC0 1.0
+https://quaternius.itch.io/universal-animation-library-2
+https://opengameart.org/content/universal-animation-library-2
+Sword_Regular_A/B/C, Sword_Block, Sword_Dash_RM and Hit_Knockback were retargeted in Blender to the game's original 18-joint characters.
+Original license included in licenses/Quaternius-UAL2-CC0.txt.
+
+Current character outputs: assets/hero-animated.glb and assets/rival-animated.glb.
+Each output contains 18 joints and 18 animation clips (UAL1: 12; UAL2: 6).
+Current GLB structure checks passed: 18 joints, 18 named clips and 918 animation channels per actor. Current Chrome selected jump/air and crouch attacks were exercised. Arm-raised frames were reviewed after smoothing 2,361 source vertices; all-pose naturalness and zero cloth penetration are not asserted. The exported Idle is an alternate; the current upright ready stance is a procedural pose.
+CC0 applies to the source animation data; the project's generated character geometry/materials are separately sourced, not reclassified as CC0.
+The older assets/hero.glb, rival.glb and hero-next.glb are retained recovery exports and are not the engine's active character load targets.
+
+Poly Haven Forest Ground 04 — CC0
+https://polyhaven.com/a/forest_ground_04
+Diffuse, OpenGL normal and roughness maps converted to WebP for the browser.
+V4 also uses Grass Path 3 ground PBR (Rob Tuytel) and Rock Moss Set 01 scanned models (Kless Gyzen), both CC0.
+https://polyhaven.com/a/grass_path_3
+https://polyhaven.com/a/rock_moss_set_01
+Further provenance and licenses: assets/world/ATTRIBUTION.txt and asset-manifest.json.
+
+Kenney Nature Kit and Castle Kit — CC0
+https://kenney.nl/assets
+V2 historical environmental models are retained in the project history; they are not the active V4 bamboo scenery.
+Original licenses and inventory are under assets/world/.
+
+Hunyuan + Blender — original generated assets
+The characters, dagger and mountain gate were generated for this project and cleaned/rigged in Blender.
+These generated assets are not represented as Kenney assets or as CC0 assets.
+
+Creative direction draws on classical Chinese ink painting, poetic wuxia storytelling and rain-night cinema.
+Characters and dialogue are original; no commercial game's character, scene or animation assets were extracted.
+
+V4 sound assets — 18 actual CC0 audio files. Current Chrome reports 18 loaded, 0 failed; all playback devices and subjective listening remain separate.
+Kenney — RPG Audio and Impact Sounds: 16 sword, draw, cloth, footstep, metal and soft-impact samples.
+https://kenney.nl/assets/rpg-audio
+https://kenney.nl/assets/impact-sounds
+Ylmir — Rain (loopable): rain field recording, edited for loop seam and level.
+https://opengameart.org/content/rain-loopable
+Luke.RUSTLTD — wind1: PureData-synthesized wind, excerpted and edited for loop seam and level.
+https://opengameart.org/content/wind1
+Original notices, source and processed hashes: assets/audio/CREDITS.txt and assets/audio/manifest.json.
+Project synthesis remains a separate sound layer/fallback; these source recordings are not presented as AI-generated audio.
+
+V4 REFINED JIAN - SEPARATE MIXED PROVENANCE
+Poly Haven Antique Estoc — CC0 1.0
+https://polyhaven.com/a/antique_estoc
+https://polyhaven.com/license
+Source texturing: James Ray Cock; original source modeling: Ulan Cabanilla.
+Only the blade surface and its PBR wear are reused and reshaped. The compact Chinese-style guard, dark grip, crossed cloth wrapping and pommel were newly modeled in Blender for this project; the original European hilt is not included.
+Current file: assets/jian-refined.glb (relative to website root), with three embedded 1K PBR images.
+The CC0 source contribution and the project-created parts remain separately attributed. Current Chrome close-up shows the refined weapon on the detailed characters. This selected frame and file checks do not establish every animated grip or cloth pose.
+
+CURRENT CHARACTER STATUS
+Both current actors are detailed adult-proportioned original project exports: Shen Yan in dark clothing and Pei Ji in pale clothing. The new rival replaces the earlier simpler export. Generated character geometry/materials are not claimed as CC0 source animation assets.

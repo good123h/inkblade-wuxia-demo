@@ -1,0 +1,176 @@
+{
+  "license": "CC0 1.0",
+  "creator": "Kenney",
+  "sources": [
+    "https://kenney.nl/assets/rpg-audio",
+    "https://kenney.nl/assets/impact-sounds"
+  ],
+  "groups": {
+    "swing": [
+      {
+        "url": "./assets/audio/knifeSlice.ogg",
+        "normalization": 0.8835,
+        "duration": 0.5995,
+        "source_peak": 1.01863,
+        "source_rms": 0.11202,
+        "sha256": "4cd96dc630bed9840c15f1dd2306da2cc56a4da26a5d3f1a03c5a7265ac5e54f"
+      },
+      {
+        "url": "./assets/audio/knifeSlice2.ogg",
+        "normalization": 0.6044,
+        "duration": 0.5688,
+        "source_peak": 1.48911,
+        "source_rms": 0.14875,
+        "sha256": "6c2064d0ef988d1ec3d56868e823ea8823a5cac00f2742560052633529407def"
+      }
+    ],
+    "draw": [
+      {
+        "url": "./assets/audio/drawKnife1.ogg",
+        "normalization": 3,
+        "duration": 0.3997,
+        "source_peak": 0.0712,
+        "source_rms": 0.00785,
+        "sha256": "276403e72c3b71c47bc24db3083970c23f8e5551ffa78f436f83483c56f3f0bb"
+      },
+      {
+        "url": "./assets/audio/drawKnife2.ogg",
+        "normalization": 3,
+        "duration": 0.4459,
+        "source_peak": 0.08692,
+        "source_rms": 0.01143,
+        "sha256": "d5df6a4130cbb016f97b4883769a418917b9629cb4c21717030b186e0c73281a"
+      }
+    ],
+    "cloth": [
+      {
+        "url": "./assets/audio/cloth1.ogg",
+        "normalization": 1.0109,
+        "duration": 0.661,
+        "source_peak": 0.89031,
+        "source_rms": 0.0656,
+        "sha256": "ddb93a3671233f95da0e0b10367f082f7eb42fa6caaddcf776410aa8833c747d"
+      },
+      {
+        "url": "./assets/audio/cloth2.ogg",
+        "normalization": 2.09,
+        "duration": 0.4151,
+        "source_peak": 0.43063,
+        "source_rms": 0.04678,
+        "sha256": "8a7451193c38bc05483aec25dd193e163a15d44cf7fff04ac7912573231b0201"
+      }
+    ],
+    "step": [
+      {
+        "url": "./assets/audio/footstep_grass_000.ogg",
+        "normalization": 0.7188,
+        "duration": 0.7747,
+        "source_peak": 1.25206,
+        "source_rms": 0.04542,
+        "sha256": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f"
+      },
+      {
+        "url": "./assets/audio/footstep_grass_001.ogg",
+        "normalization": 0.7295,
+        "duration": 0.6707,
+        "source_peak": 1.23368,
+        "source_rms": 0.05128,
+        "sha256": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04"
+      },
+      {
+        "url": "./assets/audio/footstep_grass_002.ogg",
+        "normalization": 0.7185,
+        "duration": 0.6895,
+        "source_peak": 1.25258,
+        "source_rms": 0.0475,
+        "sha256": "73a520139f5be716a403bfe9c80e0e94d1e61d8e9de04a354b336392164b53dc"
+      },
+      {
+        "url": "./assets/audio/footstep_grass_003.ogg",
+        "normalization": 0.7081,
+        "duration": 0.6664,
+        "source_peak": 1.27106,
+        "source_rms": 0.04768,
+        "sha256": "0546e1d8ab2def714425701a18bd34c5ee2794b12e858e5b595aabcf38a34137"
+      }
+    ],
+    "metal": [
+      {
+        "url": "./assets/audio/impactMetal_light_000.ogg",
+        "normalization": 0.7109,
+        "duration": 0.373,
+        "source_peak": 1.26594,
+        "source_rms": 0.12512,
+        "sha256": "33b5e6e37c6e9d54e07bf5a89b12c76e879f40c1ea83cdd82714df1d6f9fec6d"
+      },
+      {
+        "url": "./assets/audio/impactMetal_medium_001.ogg",
+        "normalization": 0.7326,
+        "duration": 0.1405,
+        "source_peak": 1.22855,
+        "source_rms": 0.14945,
+        "sha256": "e8a9eaba7c4d27422e4eeb3e6c7100d5d7dc0f83e005efc98c960adcc5265337"
+      }
+    ],
+    "parry": [
+      {
+        "url": "./assets/audio/impactMetal_heavy_001.ogg",
+        "normalization": 0.7217,
+        "duration": 0.3564,
+        "source_peak": 1.24699,
+        "source_rms": 0.09356,
+        "sha256": "83554049f81f4db9209379e103c30bfa63f65c42189a03f300b045c2c82e23ae"
+      },
+      {
+        "url": "./assets/audio/impactMetal_heavy_003.ogg",
+        "normalization": 0.7128,
+        "duration": 0.204,
+        "source_peak": 1.26268,
+        "source_rms": 0.12294,
+        "sha256": "b0f2ba4dabde9a87eb9c188a19d31e0c2300fd321adeba08d3b9b8aa011d7037"
+      }
+    ],
+    "hit": [
+      {
+        "url": "./assets/audio/impactSoft_heavy_000.ogg",
+        "normalization": 0.7072,
+        "duration": 0.5268,
+        "source_peak": 1.27257,
+        "source_rms": 0.19047,
+        "sha256": "49e7ca88743fca974bb8676ea138b751cfd8f9033b5e7af8736c2a215d6edbc1"
+      },
+      {
+        "url": "./assets/audio/impactSoft_heavy_002.ogg",
+        "normalization": 0.704,
+        "duration": 0.5694,
+        "source_peak": 1.27834,
+        "source_rms": 0.19657,
+        "sha256": "d130ae541951243d3f6ed963d0057450a445ffe117fbf9a084d34eb1635cb563"
+      }
+    ],
+    "rain": [
+      {
+        "url": "./assets/audio/rain-loop.ogg",
+        "normalization": 1,
+        "duration": 26.5,
+        "author": "Ylmir",
+        "source": "https://opengameart.org/content/rain-loopable",
+        "license": "CC0 1.0",
+        "processing": "first 30 seconds maximum; half-second end-to-start crossfade; level adjusted",
+        "sha256": "b4095c69c30d5d2ab571776aabfb21a249acf838733ae5ce4ea9a18a55990bb3"
+      }
+    ],
+    "wind": [
+      {
+        "url": "./assets/audio/wind-loop.ogg",
+        "normalization": 1,
+        "duration": 29.5,
+        "author": "Luke.RUSTLTD",
+        "source": "https://opengameart.org/content/wind1",
+        "license": "CC0 1.0",
+        "processing": "first 30 seconds maximum; half-second end-to-start crossfade; level adjusted",
+        "sha256": "edcf8074ef210eb95a530f0ebeab3283fc3c0916fc4d9173adc168dbe6ac5b92"
+      }
+    ]
+  }
+}

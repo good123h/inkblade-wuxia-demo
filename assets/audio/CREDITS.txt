@@ -1,0 +1,20 @@
+Rain-night audio assets / 墨刃
+
+Kenney — RPG Audio and Impact Sounds, CC0 1.0.
+https://kenney.nl/assets/rpg-audio
+https://kenney.nl/assets/impact-sounds
+Original author notices accompany these files.
+16 samples selected for sword swing, draw, cloth, grass footsteps, metal clashes and soft impacts.
+
+Ylmir — Rain (loopable), CC0.
+https://opengameart.org/content/rain-loopable
+Original 1.ogg field recording adapted as rain-loop.ogg with a half-second loop crossfade and level adjustment.
+
+Luke.RUSTLTD — wind1, CC0.
+https://opengameart.org/content/wind1
+Original PureData synthesized wind adapted as wind-loop.ogg, 30-second excerpt with a half-second loop crossfade and level adjustment.
+This sound is not represented as an AI-generated recording.
+
+CC0 legal dedication: https://creativecommons.org/publicdomain/zero/1.0/
+Source hashes, processed file hashes and timing: manifest.json.
+Original project synthesis is retained for sound layers and fallback, separately from these sources.

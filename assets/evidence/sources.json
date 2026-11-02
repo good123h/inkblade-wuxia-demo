@@ -1,0 +1,18 @@
+[
+  {
+    "file": "v4-final-menu.png",
+    "description": "本轮 Chrome 实机：雨夜竹林菜单",
+    "sha256": "af6d6bd0f0c41fa754dbf3534bd008881fb391e93e21914806486732f9c1502c",
+    "bytes": 109165,
+    "source": "Project owner captured the running game in Google Chrome during this development session. Copied without pixel edits.",
+    "scope": "Actual browser screenshot, not concept art, not Blender render, not proof of all poses or mobile hardware."
+  },
+  {
+    "file": "v4-final-duel.png",
+    "description": "本轮 Chrome 实机：双侠、新剑与交手近景；程序观战，含演示辅助",
+    "sha256": "a17e0c263160d23a34a570c4348f36f113bb7e6cf6b463fc6b8f8129ac3c944e",
+    "bytes": 97218,
+    "source": "Project owner captured the running game in Google Chrome during this development session. Copied without pixel edits.",
+    "scope": "Actual browser screenshot, not concept art, not Blender render, not proof of all poses or mobile hardware."
+  }
+]

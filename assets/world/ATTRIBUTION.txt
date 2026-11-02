@@ -1,0 +1,118 @@
+INKBLADE V4 - RAIN BAMBOO MOUNTAIN PATH
+Date: 2026-11-02
+
+ACTIVE SOURCE CODE
+Long Wind / 长风 by jbang2004 (2026)
+https://github.com/jbang2004/long-wind
+License: MIT for source code; retained in LICENSE-long-wind.txt.
+Adapted into long-wind-bamboo.js from:
+ src/world/bamboo.js: painted lanceolate leaf atlas, spray branches, culm/crown geometry, bamboo bend and nodal appearance.
+ src/world/foliage.js: alpha-edge color dilation and canvas texture setup.
+ src/core/wind.js: deterministic wind texture, gust fronts and leaf flutter.
+ src/core/noise.js: mulberry32 seeded random generator.
+Adaptations: standalone integration; bounded instanced grove; local clock; scene-specific placement, wet materials and lighting.
+No Tripo character models or Mixamo animation files were copied from Long Wind.
+
+ACTIVE PBR TEXTURES
+Poly Haven: Forest Ground 04
+https://polyhaven.com/a/forest_ground_04
+https://polyhaven.com/license
+Authors: Rob Tuytel (photography/processing); Rico Cilliers (minor adjustments), as credited by the asset page.
+License: CC0 1.0 Universal; commercial use and redistribution permitted.
+Downloaded from dl.polyhaven.org, original 2048x2048 JPEG diffuse, OpenGL normal and roughness maps.
+Runtime copies: textures/forest_ground_04_diff.webp, forest_ground_04_nor_gl.webp, forest_ground_04_rough.webp.
+Derived only by image compression, same 2048x2048 dimensions.
+The rendered terrain uses the real three PBR maps; wet pools, fallen leaves, low fog and distant terrain are generated in project code.
+
+V4 ACTIVE SCANNED ROCKS AND SECOND GROUND LAYER
+Poly Haven Rock Moss Set 01 — Kless Gyzen — CC0.
+https://polyhaven.com/a/rock_moss_set_01
+Actual glTF geometry, binary and 1K diffuse/normal/roughness dependencies are in polyhaven/rock_moss_set_01/.
+The already downloaded Long Wind Poly Haven copy was used; three real mesh variants are instanced, not replaced by primitive rocks.
+Poly Haven Grass Path 3 — Rob Tuytel — CC0.
+https://polyhaven.com/a/grass_path_3
+Runtime files: polyhaven/grass_path_3/diffuse_1k.webp, nor_gl_1k.webp, arm_1k.webp.
+Derived from source 2K maps by resizing and WebP encoding. Diffuse, tangent normal and packed AO/roughness channels are used in the layered wet ground.
+Official source/license pages were rechecked through Chrome/Google and official page reads on 2026-11-02.
+
+V4 REACTIVATED ORIGINAL GENERATED GATE
+mountain-gate.glb — original Hunyuan + Blender asset, NOT CC0.
+The existing 14,000-triangle generated gate is now a distant landmark at 7.8 m displayed height.
+Its stairs, side creek, curved stone bridge, ferns, grass and lantern supports are original procedural project scenery.
+The concept image is an original art-direction target; it is not used as the game's background or substituted for 3D scenery.
+
+ACTIVE CHARACTER ANIMATIONS - SEPARATE FROM ENVIRONMENT MATERIALS
+Author: Quaternius
+Universal Animation Library / Standard (UAL1):
+ https://quaternius.com/packs/universalanimationlibrary.html
+ https://quaternius.itch.io/universal-animation-library
+ https://opengameart.org/content/universal-animation-library
+ Source clips: Walk_Loop, Jog_Fwd_Loop, Sprint_Loop, Roll, Sword_Idle, Death01, Jump_Start, Jump_Loop, Jump_Land, Crouch_Idle_Loop, Crouch_Fwd_Loop, Sword_Attack.
+Universal Animation Library 2 / Standard (UAL2):
+ https://quaternius.itch.io/universal-animation-library-2
+ https://opengameart.org/content/universal-animation-library-2
+ Source clips: Sword_Regular_A, Sword_Regular_B, Sword_Regular_C, Sword_Block, Sword_Dash_RM, Hit_Knockback.
+Both downloaded Standard packages explicitly contain CC0 1.0 Universal / Public Domain Dedication licenses.
+Original notices retained at licenses/Quaternius-UAL1-CC0.txt and licenses/Quaternius-UAL2-CC0.txt (relative to the website root).
+Retargeted and baked in Blender into assets/hero-animated.glb and assets/rival-animated.glb.
+Each output: 18 joints, 18 clips. Structure checked: 918 animation channels per actor; selected current Chrome jump/air and crouch attacks exercised; all-animation visual quality is not asserted. The exported Idle is an alternate; the current upright ready stance uses a project procedural pose.
+The character geometry and materials are project-generated Hunyuan/Blender assets, not Quaternius models and not represented as CC0.
+Older hero.glb, rival.glb and hero-next.glb are recovery exports, not current character load targets.
+
+V2 ASSET DETAILS BELOW - KENNEY MODELS REMAIN INACTIVE; THE GENERATED GATE IS REACTIVATED AS NOTED ABOVE
+
+INKBLADE - VALLEY SCENERY ASSET REGISTER
+Date: 2026-11-02
+
+Author / distributor: Kenney
+Official project website: https://kenney.nl/
+Official asset catalog: https://kenney.nl/assets
+License for the Kenney files listed below: Creative Commons Zero (CC0 1.0 Universal)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+The original License.txt files were read and copied as LICENSE-nature.txt and LICENSE-castle.txt.
+Kenney permits personal, educational and commercial use under CC0. Attribution is voluntary and retained here.
+
+Nature Kit (2.1), original creation date 2020-04-29
+Source package directory: kenney_nature-kit / Models / GLTF format
+Copied without modifying originals:
+ nature/cliff_large_rock.glb
+ nature/rock_tallA.glb
+ nature/rock_tallC.glb
+ nature/rock_largeB.glb
+ nature/tree_pineTallA_detailed.glb
+ nature/tree_pineRoundD.glb
+ nature/bridge_stoneRound.glb
+These seven GLB files contain geometry/materials and no external image references.
+
+Castle Kit (2.0), original creation date 2024-03-27
+Source package directory: kenney_castle-kit / Models / GLB format
+Copied without modifying originals:
+ castle/wall-narrow.glb
+ castle/wall-narrow-gate.glb
+ castle/Textures/colormap.png
+Both GLB files reference Textures/colormap.png; the dependency is preserved.
+Only simple stone wall/gate modules are used, with no castle towers or European roof silhouettes.
+
+Fantasy Town Kit (2.0) license was inspected, but no assets from that kit were used.
+
+ORIGINAL GENERATED ASSET - NOT COVERED BY KENNEY CC0
+mountain-gate.glb
+Generated for this project using Hunyuan; cleaned, simplified and exported in Blender.
+14,000 triangles; embedded 1024 texture; no external image dependency.
+Actual POSITION-buffer bounds verified: 8.895132 m wide x 6.0 m high x 8.527417 m deep.
+Placed at 7.5 m high in the scene, with its embedded texture retained and tinted for the rain-night palette.
+This is an original project-generated asset, not a Kenney asset and not represented as CC0.
+
+Runtime treatment: real GLB geometry is loaded, combined per model, instanced, scaled and recolored in muted ink teal. Original local source files were not edited. The river plane, reflection strokes and distant light points are original procedural scenery. Exterior scenery is not an explorable-world claim.
+
+V4 REFINED JIAN - SEPARATE MIXED PROVENANCE
+Poly Haven Antique Estoc — CC0 1.0
+https://polyhaven.com/a/antique_estoc
+https://polyhaven.com/license
+Source texturing: James Ray Cock; original source modeling: Ulan Cabanilla.
+Only the blade surface and its PBR wear are reused and reshaped. The compact Chinese-style guard, dark grip, crossed cloth wrapping and pommel were newly modeled in Blender for this project; the original European hilt is not included.
+Current file: assets/jian-refined.glb (relative to website root), with three embedded 1K PBR images.
+The CC0 source contribution and the project-created parts remain separately attributed. Current Chrome close-up shows the refined weapon on the detailed characters. This selected frame and file checks do not establish every animated grip or cloth pose.
+
+CURRENT CHARACTER STATUS
+Both current actors are detailed adult-proportioned original project exports: Shen Yan in dark clothing and Pei Ji in pale clothing. The new rival replaces the earlier simpler export. Generated character geometry/materials are not claimed as CC0 source animation assets.

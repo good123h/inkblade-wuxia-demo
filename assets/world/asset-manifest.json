@@ -1,0 +1,465 @@
+{
+  "models": [
+    {
+      "file": "castle/wall-narrow-gate.glb",
+      "bytes": 17092,
+      "sha256": "f01e3005f2cfe7451a0376a4fdba2408594cb60664e24e53e736e52d5b3ec934",
+      "meshes": 1,
+      "triangles": 192,
+      "externalImages": [
+        "Textures/colormap.png"
+      ],
+      "source": "Kenney CC0",
+      "runtimeStatus": "archived V2; not loaded"
+    },
+    {
+      "file": "castle/wall-narrow.glb",
+      "bytes": 12160,
+      "sha256": "347fcdb0842ed47f20931b962dc0a2ad212690812386a3cb634016b4229145a7",
+      "meshes": 1,
+      "triangles": 126,
+      "externalImages": [
+        "Textures/colormap.png"
+      ],
+      "source": "Kenney CC0",
+      "runtimeStatus": "archived V2; not loaded"
+    },
+    {
+      "file": "mountain-gate.glb",
+      "bytes": 2599292,
+      "sha256": "334dd7df75b69b66ca7a6410d0519c695dfd20040381f3262ef2089f51710c27",
+      "meshes": 1,
+      "triangles": 14000,
+      "externalImages": [],
+      "source": "Project-generated Hunyuan + Blender",
+      "runtimeStatus": "active V4 distant original gate"
+    },
+    {
+      "file": "nature/bridge_stoneRound.glb",
+      "bytes": 22552,
+      "sha256": "0b2254c5eb59a5fac2c7185cdc9af8efb941a31f0c0fb5a3fabaeb60c0108b41",
+      "meshes": 1,
+      "triangles": 360,
+      "externalImages": [],
+      "source": "Kenney CC0",
+      "runtimeStatus": "archived V2; not loaded"
+    },
+    {
+      "file": "nature/cliff_large_rock.glb",
+      "bytes": 3560,
+      "sha256": "f9bf79cd3a76bbe11f4887053655585e467e14f2528678215a820896669e4e8e",
+      "meshes": 1,
+      "triangles": 32,
+      "externalImages": [],
+      "source": "Kenney CC0",
+      "runtimeStatus": "archived V2; not loaded"
+    },
+    {
+      "file": "nature/rock_largeB.glb",
+      "bytes": 8560,
+      "sha256": "caa8b025833d4dabf6d98fe2e96cf2fbd886693ac990df0db75f9d827194374b",
+      "meshes": 1,
+      "triangles": 85,
+      "externalImages": [],
+      "source": "Kenney CC0",
+      "runtimeStatus": "archived V2; not loaded"
+    },
+    {
+      "file": "nature/rock_tallA.glb",
+      "bytes": 12072,
+      "sha256": "88250f236a3b75f8b55c1d8afb6af020f8a91b1e81f9fb51f7ef513420d45a2d",
+      "meshes": 1,
+      "triangles": 136,
+      "externalImages": [],
+      "source": "Kenney CC0",
+      "runtimeStatus": "archived V2; not loaded"
+    },
+    {
+      "file": "nature/rock_tallC.glb",
+      "bytes": 5184,
+      "sha256": "87943b8b0d244ec9832d5dca9bf3cee2ab62aaa81797749f21a972f85c1f3be4",
+      "meshes": 1,
+      "triangles": 37,
+      "externalImages": [],
+      "source": "Kenney CC0",
+      "runtimeStatus": "archived V2; not loaded"
+    },
+    {
+      "file": "nature/tree_pineRoundD.glb",
+      "bytes": 13748,
+      "sha256": "a5051944fbfae7900cef8314c4a5d977b6b29bcd4e4ae5dea9d80980e65a411a",
+      "meshes": 1,
+      "triangles": 170,
+      "externalImages": [],
+      "source": "Kenney CC0",
+      "runtimeStatus": "archived V2; not loaded"
+    },
+    {
+      "file": "nature/tree_pineTallA_detailed.glb",
+      "bytes": 10708,
+      "sha256": "9ba6337460e718b8baf165b23c02f39455e3d5757b1911505410c46bc88a86b5",
+      "meshes": 1,
+      "triangles": 134,
+      "externalImages": [],
+      "source": "Kenney CC0",
+      "runtimeStatus": "archived V2; not loaded"
+    }
+  ],
+  "modelCount": 10,
+  "mountainGateActualPositionBounds": {
+    "min": [
+      -4.447566032409668,
+      0,
+      -4.263708591461182
+    ],
+    "max": [
+      4.447566032409668,
+      6,
+      4.263708591461182
+    ],
+    "method": "decoded actual POSITION buffer; identity GLB node transform"
+  },
+  "runtimeVerification": "Current Chrome movement, native mouse orbit, jump+air attack, crouch attack, lock and E/Q/Space tested; pause/restart/failure and assisted showcase victory exercised. Phone-sized Chrome layout checked; actual mobile hardware not tested. Deployment requires separate URL readback.",
+  "activeScene": "V4 rain bamboo mountain path",
+  "modelsStatus": "Nine Kenney models are archived V2 recovery assets. The original generated mountain gate is reactivated in V4.",
+  "activeTextures": [
+    {
+      "file": "textures/forest_ground_04_diff.webp",
+      "bytes": 2078286,
+      "sha256": "d135481f0607897c715ab9ef9776fa0d7c15a75e453124802b078201eb9a151f",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "source": "https://polyhaven.com/a/forest_ground_04",
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "textures/forest_ground_04_nor_gl.webp",
+      "bytes": 2235526,
+      "sha256": "83876de00ca627e3fc75e3d737e48f351e6b82f2fdad44b9139348e3c2fdad5d",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "source": "https://polyhaven.com/a/forest_ground_04",
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "textures/forest_ground_04_rough.webp",
+      "bytes": 1031000,
+      "sha256": "af246133b52180b349b1eb9f7701483d241d75c051bc0a2b684f2640595efbde",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "source": "https://polyhaven.com/a/forest_ground_04",
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "polyhaven/grass_path_3/diffuse_1k.webp",
+      "bytes": 482148,
+      "sha256": "ae44006cfd48dca75ef826892e84d8c42ea2dc73eb886b694572a0007ef02aef",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source": "https://polyhaven.com/a/grass_path_3",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "processing": "2K source resized to 1K and encoded as WebP"
+    },
+    {
+      "file": "polyhaven/grass_path_3/nor_gl_1k.webp",
+      "bytes": 357782,
+      "sha256": "0e381cb8d8673c4cacb4479e8ea2a1b9baba1670d95c5d863982992657510791",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source": "https://polyhaven.com/a/grass_path_3",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "processing": "2K source resized to 1K and encoded as WebP"
+    },
+    {
+      "file": "polyhaven/grass_path_3/arm_1k.webp",
+      "bytes": 500346,
+      "sha256": "e77f64b4d104638d3d5bdd6c0208c8c8ee7cc0e33d6f0aef7bb26f101f265813",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "source": "https://polyhaven.com/a/grass_path_3",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "processing": "2K source resized to 1K and encoded as WebP"
+    }
+  ],
+  "derivedSource": {
+    "file": "long-wind-bamboo.js",
+    "upstream": "https://github.com/jbang2004/long-wind",
+    "commit": "42e49155663e1be1e282b25053e7a052363856ee",
+    "license": "MIT",
+    "noticeFile": "LICENSE-long-wind.txt",
+    "sources": [
+      "src/world/bamboo.js",
+      "src/world/foliage.js",
+      "src/core/wind.js",
+      "src/core/noise.js"
+    ],
+    "thirdPartyCharacterAndAnimationAssetsCopied": false
+  },
+  "activeCharacterAnimations": {
+    "scope": "Current character files and weapon metadata use paths relative to website root; older Kenney models are explicitly archived.",
+    "packages": [
+      {
+        "name": "Quaternius Universal Animation Library Standard / UAL1",
+        "source": "https://quaternius.itch.io/universal-animation-library",
+        "downloadRelease": "https://opengameart.org/content/universal-animation-library",
+        "license": "CC0-1.0",
+        "notice": "licenses/Quaternius-UAL1-CC0.txt",
+        "retargetedClips": {
+          "Walk": "Walk_Loop",
+          "Jog": "Jog_Fwd_Loop",
+          "Sprint": "Sprint_Loop",
+          "Roll": "Roll",
+          "Idle": "Sword_Idle",
+          "Death": "Death01",
+          "JumpStart": "Jump_Start",
+          "JumpLoop": "Jump_Loop",
+          "JumpLand": "Jump_Land",
+          "CrouchIdle": "Crouch_Idle_Loop",
+          "CrouchWalk": "Crouch_Fwd_Loop",
+          "AttackD": "Sword_Attack"
+        }
+      },
+      {
+        "name": "Quaternius Universal Animation Library 2 Standard / UAL2",
+        "source": "https://quaternius.itch.io/universal-animation-library-2",
+        "license": "CC0-1.0",
+        "notice": "licenses/Quaternius-UAL2-CC0.txt",
+        "retargetedClips": {
+          "AttackA": "Sword_Regular_A",
+          "AttackB": "Sword_Regular_B",
+          "AttackC": "Sword_Regular_C",
+          "Block": "Sword_Block",
+          "Dash": "Sword_Dash_RM",
+          "Hit": "Hit_Knockback"
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "file": "assets/hero-animated.glb",
+        "bytes": 3589040,
+        "sha256": "87a59e4bb918c4e6ce06f111cc6e5b07e34641b71bc0f53ad987070463f9a70f",
+        "joints": 18,
+        "clips": [
+          "AttackA",
+          "AttackB",
+          "AttackC",
+          "Block",
+          "Dash",
+          "Hit",
+          "Walk",
+          "Jog",
+          "Sprint",
+          "Roll",
+          "Idle",
+          "Death",
+          "JumpStart",
+          "JumpLoop",
+          "JumpLand",
+          "CrouchIdle",
+          "CrouchWalk",
+          "AttackD"
+        ],
+        "channels": 918
+      },
+      {
+        "file": "assets/rival-animated.glb",
+        "bytes": 4003084,
+        "sha256": "19c92a69df519f1ff22ebd01bc066b7bc07eb28f283bd966db1f2af22dda6c5a",
+        "joints": 18,
+        "clips": [
+          "AttackA",
+          "AttackB",
+          "AttackC",
+          "Block",
+          "Dash",
+          "Hit",
+          "Walk",
+          "Jog",
+          "Sprint",
+          "Roll",
+          "Idle",
+          "Death",
+          "JumpStart",
+          "JumpLoop",
+          "JumpLand",
+          "CrouchIdle",
+          "CrouchWalk",
+          "AttackD"
+        ],
+        "channels": 918
+      }
+    ],
+    "geometryRights": "Project-generated Hunyuan/Blender character geometry and materials are separate from CC0 source animation data.",
+    "verification": "Actual current GLBs: 18 joints, 18 clips and 918 channels each. Current Chrome R+J aerial attack and C+J crouching attack exercised; arm-raised recorded frame reviewed after smoothing 2,361 source vertices. This does not establish every pose or zero cloth penetration.",
+    "archivedCharacterFiles": [
+      "assets/hero.glb",
+      "assets/rival.glb",
+      "assets/hero-next.glb"
+    ],
+    "idlePolicy": "Idle clip is retained in the asset as an alternate. The current upright ready stance uses a project procedural pose; inclusion of Idle does not assert that every exported clip is selected at runtime.",
+    "characters": "Two adult-proportioned original characters, Shen Yan in dark clothing and Pei Ji in pale clothing. The rival is the newly detailed export."
+  },
+  "activeEnvironmentModels": [
+    {
+      "file": "polyhaven/rock_moss_set_01/rock_moss_set_01_1k.gltf",
+      "source": "https://polyhaven.com/a/rock_moss_set_01",
+      "author": "Kless Gyzen",
+      "license": "CC0-1.0",
+      "dependencies": [
+        "rock_moss_set_01.bin",
+        "textures/rock_moss_set_01_nor_gl_1k.jpg",
+        "textures/rock_moss_set_01_diff_1k.jpg",
+        "textures/rock_moss_set_01_rough_1k.jpg"
+      ],
+      "sourceCopy": "Poly Haven assets included in the checked Long Wind repository",
+      "variantsUsed": 3,
+      "verification": "Files and dependencies checked; V4 browser visual acceptance pending"
+    },
+    {
+      "file": "mountain-gate.glb",
+      "source": "Project Hunyuan generation and Blender cleanup",
+      "license": "Separate generated project asset; not CC0",
+      "displayHeight": 7.8
+    }
+  ],
+  "concept": {
+    "file": "../concepts/rain-bamboo-v4.png",
+    "role": "Art-direction target only; never loaded by world-assets.js as a background"
+  },
+  "activeWeapon": {
+    "file": "assets/jian-refined.glb",
+    "bytes": 2490344,
+    "sha256": "6269a8940ffc7cf9ebbc1ada5868f10635260a1aeb12831ba59258364887389d",
+    "source": "https://polyhaven.com/a/antique_estoc",
+    "sourceLicense": "CC0-1.0",
+    "sourceLicenseURL": "https://polyhaven.com/license",
+    "sourceAuthors": {
+      "texturing": "James Ray Cock",
+      "originalModeling": "Ulan Cabanilla"
+    },
+    "reuseScope": "Only the blade surface geometry and its PBR wear/material are retained and reshaped. The compact Chinese-style guard, grip, crossed wrapping and pommel were rebuilt in Blender for this project; the original European hilt is not included.",
+    "embeddedImages": [
+      "antique_estoc_nor_gl_1k",
+      "antique_estoc_diff_1k",
+      "antique_estoc_arm_1k"
+    ],
+    "coordinateContract": {
+      "bladeTipLocal": [
+        0,
+        0,
+        0.82
+      ],
+      "gripCenterLocal": [
+        0,
+        0,
+        -0.17
+      ]
+    },
+    "verification": "File and blade geometry reviewed. Current Chrome close-up displays the refined weapon on the detailed characters; all-animation grip/cloth naturalness remains outside this limited observation."
+  },
+  "playableWorld": {
+    "bounds": {
+      "minX": -18,
+      "maxX": 18,
+      "minZ": -28,
+      "maxZ": 14
+    },
+    "coreClearMeters": [
+      12,
+      9
+    ],
+    "terrainFlatVertexMargin": {
+      "minX": -20,
+      "maxX": 20,
+      "minZ": -30,
+      "maxZ": 16
+    },
+    "scope": "Bounded explorable bamboo paths; distant bridge and raised mountain gate are scenery.",
+    "colliderCount": 23
+  },
+  "activeAudio": {
+    "manifest": "assets/audio/manifest.json",
+    "credits": "assets/audio/CREDITS.txt",
+    "files": 18,
+    "license": "CC0-1.0",
+    "sources": [
+      "https://kenney.nl/assets/rpg-audio",
+      "https://kenney.nl/assets/impact-sounds",
+      "https://opengameart.org/content/rain-loopable",
+      "https://opengameart.org/content/wind1"
+    ],
+    "runtimeVerification": "Current Chrome reports 18 loaded, 0 failed. This resource status is distinct from all playback devices or subjective listening acceptance."
+  },
+  "currentBrowserEvidence": {
+    "movement": true,
+    "nativeMouseDrag": {
+      "yawBefore": 0.616,
+      "yawAfter": 1.936,
+      "pitchBefore": 0.24,
+      "pitchAfter": 0.36
+    },
+    "jumpAttack": {
+      "observedHeightMetres": 0.78,
+      "clip": "AttackC",
+      "state": "air"
+    },
+    "crouchAttack": {
+      "clip": "AttackD"
+    },
+    "combinedSkillSequence": {
+      "inputs": [
+        "Tab",
+        "E",
+        "Q",
+        "Space"
+      ],
+      "enemyHpBefore": 500,
+      "enemyHpAfter": 327,
+      "scope": "Combined input sequence, not single-attack damage"
+    },
+    "assistedShowcase": {
+      "victory": true,
+      "approximateGameSeconds": 11,
+      "assistance": "Program control including slow healing at low health; not a human difficulty test"
+    },
+    "responsiveViewports": [
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ]
+    ],
+    "actualMobileDeviceTested": false,
+    "performance": {
+      "device": "Intel integrated graphics",
+      "shortWindowFPS": [
+        28,
+        35
+      ],
+      "scope": "During this recording session, not an all-device or long-duration benchmark"
+    },
+    "publicScreenshots": [
+      "assets/evidence/v4-final-menu.png",
+      "assets/evidence/v4-final-duel.png"
+    ]
+  }
+}
