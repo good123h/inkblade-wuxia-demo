@@ -2,7 +2,7 @@
  * Leaf painting, culm/crown geometry, alpha dilation, wind noise and bend math.
  * Reduced to a bounded duel grove, independent of the original application.
  * See LICENSE-long-wind.txt. No third-party character or animation assets copied. */
-import * as THREE from 'three';
+import * as THREE from '../../vendor/three.module.js';
 const T0=.45;
 
 export function mulberry32(seed) {

@@ -1,11 +1,11 @@
 /* V4 real 3D rain bamboo valley. The concept image is documentation only.
    Long Wind source MIT; Poly Haven scanned ground/rocks CC0; generated gate separate. */
-import {createDuelBamboo,mulberry32} from './assets/world/long-wind-bamboo.js?v=5';
-import {mergeGeometries} from './vendor/utils/BufferGeometryUtils.js';
-export async function enhanceWorld(T,scene,loader){
+import {createDuelBamboo,mulberry32} from './assets/world/long-wind-bamboo.js?v=compat-20261102-1';
+import {mergeGeometries} from './vendor/utils/BufferGeometryUtils.js?v=compat-20261102-1';
+export async function enhanceWorld(T,scene,loader,onProgress=()=>{}){
  if(scene.getObjectByName('inkblade-bamboo-world'))return scene.userData.valleyReceipt;
  const group=new T.Group();group.name='inkblade-bamboo-world';
- const rng=mulberry32(204411),r=(a,b)=>a+(b-a)*rng(),clock={value:0},loaded=[],failed=[],texLoader=new T.TextureLoader();
+ const rng=mulberry32(204411),r=(a,b)=>a+(b-a)*rng(),clock={value:0},loaded=[],failed=[],texLoader=new T.TextureLoader(loader.manager);
  const asset=new URL('./assets/world/',import.meta.url),dummy=new T.Object3D();
  async function texture(path,repeat=1,srgb=false){try{const t=await texLoader.loadAsync(new URL(path,asset).href);t.wrapS=t.wrapT=T.RepeatWrapping;t.repeat.setScalar(repeat);t.anisotropy=4;if(srgb)t.colorSpace=T.SRGBColorSpace;loaded.push(path);return t;}catch(e){failed.push({asset:path,reason:String(e.message||e)});return null;}}
  const [soil,soilNormal,soilRough,pathMap,pathNormal,pathARM]=await Promise.all([
@@ -63,7 +63,7 @@ export async function enhanceWorld(T,scene,loader){
  // Actual photographed moss rocks. Select three real stone meshes and instance them sparingly.
  let rockTriangles=0,rockInstances=0;
  try{
-  const path='polyhaven/rock_moss_set_01/rock_moss_set_01_1k.gltf',gltf=await loader.loadAsync(new URL(path,asset).href);gltf.scene.updateMatrixWorld(true);
+  const path='polyhaven/rock_moss_set_01/rock_moss_set_01_1k.gltf',gltf=await loader.loadAsync(new URL(path,asset).href,event=>onProgress({asset:path,loaded:event.loaded,total:event.total,lengthComputable:event.lengthComputable}));gltf.scene.updateMatrixWorld(true);
   const sources=[];gltf.scene.traverse(o=>{if(o.isMesh)sources.push(o);});sources.sort((a,b)=>(a.geometry.index?.count||a.geometry.attributes.position.count)-(b.geometry.index?.count||b.geometry.attributes.position.count));
   const placements=[[-13.2,5.8,2.4],[-15.2,2.3,1.8],[-12.8,-6.8,1.2],[-16.7,-12,2.2],[12.7,6.5,1.8],[15.5,4.2,1.2],[13.8,-9.8,.85],[19,-8.7,1.4],[19,-16,2.0],[-9,-15,.95],[-5,-18,.65],[11,-25,1.35],[-17,-25,2.5]];
   for(let k=0;k<3;k++){const src=sources[k],geo=src.geometry.clone();geo.applyMatrix4(src.matrixWorld);geo.computeBoundingBox();const box=geo.boundingBox,size=box.getSize(new T.Vector3()),center=box.getCenter(new T.Vector3());geo.translate(-center.x,-box.min.y,-center.z);geo.scale(1/size.y,1/size.y,1/size.y);geo.computeBoundingSphere();
@@ -98,7 +98,7 @@ export async function enhanceWorld(T,scene,loader){
  for(let i=0;i<23;i++){const x=-3.85+i*.35,y=arch(x),slope=(arch(x+.03)-arch(x-.03))/.06,angle=Math.atan(slope);boxPart(bridgeParts,bridgeX+x,y-.18,bridgeZ,.37,.40,2.85,angle);for(const side of [-1,1]){boxPart(bridgeParts,bridgeX+x,y+.16,bridgeZ+side*1.42,.36,.36,.38,angle);boxPart(bridgeParts,bridgeX+x,y+.90,bridgeZ+side*1.42,.36,.16,.22,angle);}if(i%4===0)for(const side of [-1,1])boxPart(bridgeParts,bridgeX+x,y+.54,bridgeZ+side*1.42,.15,.85,.17);}
  merge(bridgeParts,stoneMat,'curved-stone-bridge');
  const stairs=[];for(let i=0;i<20;i++){const z=-31-i*.56;boxPart(stairs,3.5,.10+i*.17,z,3.2,.24,.60);}merge(stairs,stoneMat,'distant-gate-stairway');
- let gateTriangles=0;try{const path='mountain-gate.glb',gltf=await loader.loadAsync(new URL(path,asset).href),g=gltf.scene;g.updateMatrixWorld(true);const bounds=new T.Box3().setFromObject(g),size=bounds.getSize(new T.Vector3()),center=bounds.getCenter(new T.Vector3());g.position.set(-center.x,-bounds.min.y,-center.z);const placement=new T.Group();placement.name='distant-original-mountain-gate';placement.add(g);placement.scale.setScalar(7.8/size.y);placement.position.set(3.5,3.3,-44);g.traverse(o=>{if(!o.isMesh)return;gateTriangles+=(o.geometry.index?.count||o.geometry.attributes.position.count)/3;o.castShadow=false;o.receiveShadow=true;const m=o.material.clone();if(m.color)m.color.multiply(new T.Color('#c5c7bd'));m.roughness=.8;m.envMapIntensity=.35;if(m.emissive){m.emissive.set('#34494e');m.emissiveIntensity=.22;}o.material=m;});group.add(placement);loaded.push(path);}catch(e){failed.push({asset:'mountain-gate.glb',reason:String(e.message||e)});}
+ let gateTriangles=0;try{const path='mountain-gate.glb',gltf=await loader.loadAsync(new URL(path,asset).href,event=>onProgress({asset:path,loaded:event.loaded,total:event.total,lengthComputable:event.lengthComputable})),g=gltf.scene;g.updateMatrixWorld(true);const bounds=new T.Box3().setFromObject(g),size=bounds.getSize(new T.Vector3()),center=bounds.getCenter(new T.Vector3());g.position.set(-center.x,-bounds.min.y,-center.z);const placement=new T.Group();placement.name='distant-original-mountain-gate';placement.add(g);placement.scale.setScalar(7.8/size.y);placement.position.set(3.5,3.3,-44);g.traverse(o=>{if(!o.isMesh)return;gateTriangles+=(o.geometry.index?.count||o.geometry.attributes.position.count)/3;o.castShadow=false;o.receiveShadow=true;const m=o.material.clone();if(m.color)m.color.multiply(new T.Color('#c5c7bd'));m.roughness=.8;m.envMapIntensity=.35;if(m.emissive){m.emissive.set('#34494e');m.emissiveIntensity=.22;}o.material=m;});group.add(placement);loaded.push(path);}catch(e){failed.push({asset:'mountain-gate.glb',reason:String(e.message||e)});}
  // Mountains are continuous ridges with broad peaks; the gate is kept in a valley between them.
  for(let layer=0;layer<2;layer++){const geo=new T.PlaneGeometry(170,46,96,12);geo.rotateX(-Math.PI/2);const pp=geo.attributes.position;for(let i=0;i<pp.count;i++){const x=pp.getX(i),z=pp.getZ(i),ridge=Math.pow(Math.max(0,Math.cos(z/46*Math.PI)),1.9),peak=11+5*Math.sin(x*.075+layer*2)+3*Math.sin(x*.18+.7);pp.setY(i,ridge*peak-1);}geo.computeVertexNormals();const m=new T.Mesh(geo,new T.MeshLambertMaterial({color:layer?'#29414b':'#1b313a'}));m.position.set(0,0,-62-layer*23);group.add(m);}
  // Warm practical lanterns: slender supports, opaque paper cores and restrained pools of light.
